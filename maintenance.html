@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Machine Maintenance</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f5f7;
+            margin: 0;
+        }
+
+        header {
+            background: #123b5d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #aaa;
+        }
+
+        h2 {
+            color: #155b82;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #155b82;
+            color: white;
+        }
+
+        #searchMaintenance {
+            display: block;
+            width: 300px;
+            padding: 12px;
+            margin: 20px auto;
+            font-size: 16px;
+            border: 2px solid #123b66;
+            border-radius: 8px;
+        }
+
+        .back {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background: #1683b8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back:hover {
+            background: #0d5f88;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Machine Maintenance</h1>
+
+    <input type="text"
+           id="searchMaintenance"
+           placeholder="Search Machine or Maintenance">
+
+    <p>Laboratory Machine Information System</p>
+</header>
+
+<div class="container">
+
+    <!-- CNC Milling Machine -->
+    <div class="card maintenance-section">
+        <h2>CNC Milling Machine</h2>
+
+        <table>
+            <tr>
+                <th>Maintenance Date</th>
+                <th>Work</th>
+                <th>Technician</th>
+                <th>Due Date</th>
+            </tr>
+
+            <tr>
+                <td>2026-01-10</td>
+                <td>Spindle Inspection</td>
+                <td>Ramesh Kumar</td>
+                <td>2026-07-10</td>
+            </tr>
+
+            <tr>
+                <td>2026-04-15</td>
+                <td>Coolant Service</td>
+                <td>Suresh Rao</td>
+                <td>2026-10-15</td>
+            </tr>
+
+            <tr>
+                <td>2026-07-20</td>
+                <td>Tool Inspection</td>
+                <td>Anil Kumar</td>
+                <td>2027-01-20</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- CNC Drilling Machine -->
+    <div class="card maintenance-section">
+        <h2>CNC Drilling Machine</h2>
+
+        <table>
+            <tr>
+                <th>Maintenance Date</th>
+                <th>Work</th>
+                <th>Technician</th>
+                <th>Due Date</th>
+            </tr>
+
+            <tr>
+                <td>2026-02-05</td>
+                <td>Spindle Inspection</td>
+                <td>Ravi Kumar</td>
+                <td>2026-08-05</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-12</td>
+                <td>Lubrication</td>
+                <td>Suresh Rao</td>
+                <td>2026-11-12</td>
+            </tr>
+
+            <tr>
+                <td>2026-08-01</td>
+                <td>Tool Inspection</td>
+                <td>Anil Kumar</td>
+                <td>2027-02-01</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Lathe Machine -->
+    <div class="card maintenance-section">
+        <h2>Lathe Machine</h2>
+
+        <table>
+            <tr>
+                <th>Maintenance Date</th>
+                <th>Work</th>
+                <th>Technician</th>
+                <th>Due Date</th>
+            </tr>
+
+            <tr>
+                <td>2026-01-20</td>
+                <td>Chuck Inspection</td>
+                <td>Ramesh Kumar</td>
+                <td>2026-07-20</td>
+            </tr>
+
+            <tr>
+                <td>2026-04-25</td>
+                <td>Spindle Check</td>
+                <td>Ravi Kumar</td>
+                <td>2026-10-25</td>
+            </tr>
+
+            <tr>
+                <td>2026-08-10</td>
+                <td>Lubrication</td>
+                <td>Suresh Rao</td>
+                <td>2027-02-10</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Milling Machine -->
+    <div class="card maintenance-section">
+        <h2>Milling Machine</h2>
+
+        <table>
+            <tr>
+                <th>Maintenance Date</th>
+                <th>Work</th>
+                <th>Technician</th>
+                <th>Due Date</th>
+            </tr>
+
+            <tr>
+                <td>2026-02-15</td>
+                <td>Table Inspection</td>
+                <td>Anil Kumar</td>
+                <td>2026-08-15</td>
+            </tr>
+
+            <tr>
+                <td>2026-05-20</td>
+                <td>Lubrication</td>
+                <td>Ramesh Kumar</td>
+                <td>2026-11-20</td>
+            </tr>
+
+            <tr>
+                <td>2026-08-25</td>
+                <td>Cutter Inspection</td>
+                <td>Ravi Kumar</td>
+                <td>2027-02-25</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Drilling Machine -->
+    <div class="card maintenance-section">
+        <h2>Drilling Machine</h2>
+
+        <table>
+            <tr>
+                <th>Maintenance Date</th>
+                <th>Work</th>
+                <th>Technician</th>
+                <th>Due Date</th>
+            </tr>
+
+            <tr>
+                <td>2026-01-30</td>
+                <td>Motor Inspection</td>
+                <td>Suresh Rao</td>
+                <td>2026-07-30</td>
+            </tr>
+
+            <tr>
+                <td>2026-04-10</td>
+                <td>Spindle Check</td>
+                <td>Anil Kumar</td>
+                <td>2026-10-10</td>
+            </tr>
+
+            <tr>
+                <td>2026-08-05</td>
+                <td>Lubrication</td>
+                <td>Ramesh Kumar</td>
+                <td>2027-02-05</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<a href="index.html" class="back">Back</a>
+
+<script>
+document.getElementById("searchMaintenance").addEventListener("keyup", function() {
+
+    let searchText = this.value.toLowerCase();
+    let sections = document.querySelectorAll(".maintenance-section");
+
+    sections.forEach(function(section) {
+
+        if (section.innerText.toLowerCase().includes(searchText)) {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laboratory Machines</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+        }
+
+        h1 {
+            background: #123b66;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin: 0;
+        }
+
+        .machine {
+            background: white;
+            width: 70%;
+            margin: 25px auto;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #aaa;
+        }
+
+        .machine h2 {
+            color: #123b66;
+        }
+
+        .machine p {
+            font-size: 16px;
+        }
+
+        #search {
+            display: block;
+            width: 300px;
+            padding: 12px;
+            margin: 20px auto;
+            font-size: 16px;
+            border: 2px solid #123b66;
+            border-radius: 8px;
+        }
+
+        .back {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background: #1683b8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back:hover {
+            background: #0d5f88;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Laboratory Machines</h1>
+
+<input type="text" id="search" placeholder="Search Machine">
+
+<div class="machine">
+    <h2>CNC Milling Machine</h2>
+    <p>Machine ID: CNCM001</p>
+    <p>Model: VF-3</p>
+    <p>Installation Date: 2024-01-15</p>
+    <p>Imported From: USA</p>
+</div>
+
+<div class="machine">
+    <h2>CNC Drilling Machine</h2>
+    <p>Machine ID: CNCD001</p>
+    <p>Model: DT-1</p>
+    <p>Installation Date: 2024-02-20</p>
+    <p>Imported From: USA</p>
+</div>
+
+<div class="machine">
+    <h2>Lathe Machine</h2>
+    <p>Machine ID: LAT001</p>
+    <p>Model: ST-20</p>
+    <p>Installation Date: 2023-11-10</p>
+    <p>Imported From: USA</p>
+</div>
+
+<div class="machine">
+    <h2>Milling Machine</h2>
+    <p>Machine ID: MIL001</p>
+    <p>Model: X6132</p>
+    <p>Installation Date: 2024-03-05</p>
+    <p>Imported From: China</p>
+</div>
+
+<div class="machine">
+    <h2>Drilling Machine</h2>
+    <p>Machine ID: DRL001</p>
+    <p>Model: Z3050</p>
+    <p>Installation Date: 2023-12-18</p>
+    <p>Imported From: China</p>
+</div>
+
+<a href="index.html" class="back">Back</a>
+
+<script>
+document.getElementById("search").addEventListener("keyup", function() {
+
+    let searchText = this.value.toLowerCase();
+    let machines = document.querySelectorAll(".machine");
+
+    machines.forEach(function(machine) {
+
+        if (machine.innerText.toLowerCase().includes(searchText)) {
+            machine.style.display = "block";
+        } else {
+            machine.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+
+</body>
+</html>

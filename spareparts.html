@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spare Parts</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f5f7;
+            margin: 0;
+        }
+
+        header {
+            background: #123b5d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 95%;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: white;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #aaa;
+        }
+
+        h2 {
+            color: #155b82;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #155b82;
+            color: white;
+        }
+
+        #searchParts {
+            display: block;
+            width: 300px;
+            padding: 12px;
+            margin: 20px auto;
+            font-size: 16px;
+            border: 2px solid #123b66;
+            border-radius: 8px;
+        }
+
+        .back {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background: #1683b8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back:hover {
+            background: #0d5f88;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Laboratory Machine Spare Parts</h1>
+    <p>Laboratory Machine Information System</p>
+</header>
+
+<input type="text" id="searchParts" placeholder="Search Spare Part">
+
+<div class="container">
+
+    <!-- CNC Milling -->
+    <div class="card">
+        <h2>CNC Milling Machine</h2>
+
+        <table>
+            <tr>
+                <th>Part ID</th>
+                <th>Part Name</th>
+                <th>Stock</th>
+                <th>Cost</th>
+                <th>Date of Import</th>
+                <th>Imported From</th>
+            </tr>
+
+            <tr>
+                <td>CM-P001</td>
+                <td>End Mill Cutter</td>
+                <td>30</td>
+                <td>1500</td>
+                <td>2026-01-10</td>
+                <td>Germany</td>
+            </tr>
+
+            <tr>
+                <td>CM-P002</td>
+                <td>Tool Holder</td>
+                <td>10</td>
+                <td>2800</td>
+                <td>2026-02-15</td>
+                <td>Japan</td>
+            </tr>
+
+            <tr>
+                <td>CM-P003</td>
+                <td>Coolant Pump</td>
+                <td>5</td>
+                <td>4500</td>
+                <td>2026-03-20</td>
+                <td>USA</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- CNC Drilling -->
+    <div class="card">
+        <h2>CNC Drilling Machine</h2>
+
+        <table>
+            <tr>
+                <th>Part ID</th>
+                <th>Part Name</th>
+                <th>Stock</th>
+                <th>Cost</th>
+                <th>Date of Import</th>
+                <th>Imported From</th>
+            </tr>
+
+            <tr>
+                <td>CD-P001</td>
+                <td>Drill Bit</td>
+                <td>50</td>
+                <td>500</td>
+                <td>2026-01-12</td>
+                <td>Japan</td>
+            </tr>
+
+            <tr>
+                <td>CD-P002</td>
+                <td>Tool Holder</td>
+                <td>12</td>
+                <td>2200</td>
+                <td>2026-03-10</td>
+                <td>Germany</td>
+            </tr>
+
+            <tr>
+                <td>CD-P003</td>
+                <td>Coolant Pump</td>
+                <td>6</td>
+                <td>4200</td>
+                <td>2026-05-15</td>
+                <td>USA</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Lathe -->
+    <div class="card">
+        <h2>Lathe Machine</h2>
+
+        <table>
+            <tr>
+                <th>Part ID</th>
+                <th>Part Name</th>
+                <th>Stock</th>
+                <th>Cost</th>
+                <th>Date of Import</th>
+                <th>Imported From</th>
+            </tr>
+
+            <tr>
+                <td>LT-P001</td>
+                <td>Turning Tool</td>
+                <td>20</td>
+                <td>1200</td>
+                <td>2026-01-20</td>
+                <td>Germany</td>
+            </tr>
+
+            <tr>
+                <td>LT-P002</td>
+                <td>Drive Belt</td>
+                <td>15</td>
+                <td>700</td>
+                <td>2026-04-12</td>
+                <td>China</td>
+            </tr>
+
+            <tr>
+                <td>LT-P003</td>
+                <td>Lathe Chuck</td>
+                <td>6</td>
+                <td>3000</td>
+                <td>2026-06-18</td>
+                <td>India</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Milling -->
+    <div class="card">
+        <h2>Milling Machine</h2>
+
+        <table>
+            <tr>
+                <th>Part ID</th>
+                <th>Part Name</th>
+                <th>Stock</th>
+                <th>Cost</th>
+                <th>Date of Import</th>
+                <th>Imported From</th>
+            </tr>
+
+            <tr>
+                <td>MI-P001</td>
+                <td>Milling Cutter</td>
+                <td>18</td>
+                <td>1800</td>
+                <td>2026-02-05</td>
+                <td>Germany</td>
+            </tr>
+
+            <tr>
+                <td>MI-P002</td>
+                <td>Coolant Pump</td>
+                <td>7</td>
+                <td>4200</td>
+                <td>2026-04-20</td>
+                <td>Japan</td>
+            </tr>
+
+            <tr>
+                <td>MI-P003</td>
+                <td>Tool Holder</td>
+                <td>10</td>
+                <td>1500</td>
+                <td>2026-07-10</td>
+                <td>USA</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Drilling -->
+    <div class="card">
+        <h2>Drilling Machine</h2>
+
+        <table>
+            <tr>
+                <th>Part ID</th>
+                <th>Part Name</th>
+                <th>Stock</th>
+                <th>Cost</th>
+                <th>Date of Import</th>
+                <th>Imported From</th>
+            </tr>
+
+            <tr>
+                <td>DR-P001</td>
+                <td>Drill Bit</td>
+                <td>40</td>
+                <td>450</td>
+                <td>2026-01-15</td>
+                <td>Germany</td>
+            </tr>
+
+            <tr>
+                <td>DR-P002</td>
+                <td>Drill Chuck</td>
+                <td>8</td>
+                <td>2800</td>
+                <td>2026-03-25</td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td>DR-P003</td>
+                <td>Motor Belt</td>
+                <td>15</td>
+                <td>750</td>
+                <td>2026-06-05</td>
+                <td>China</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<a href="index.html" class="back">Back</a>
+
+<script>
+document.getElementById("searchParts").addEventListener("keyup", function() {
+
+    let searchText = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(function(card) {
+
+        if (card.innerText.toLowerCase().includes(searchText)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+
+</body>
+</html>
