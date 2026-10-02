@@ -4,6 +4,33 @@
     <title>Spare Parts</title>
 
     <style>
+.disclaimer-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 8px 0;
+    background: #fff3cd;
+}
+
+.disclaimer-text {
+    display: inline-block;
+    padding-left: 100%;
+    color: #8a5a00;
+    font-weight: bold;
+    font-size: 14px;
+    animation: disclaimerMove 12s linear infinite;
+}
+
+@keyframes disclaimerMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
         body {
             font-family: Arial;
             background: #f2f5f7;
@@ -84,7 +111,11 @@
     <h1>Laboratory Machine Spare Parts</h1>
     <p>Laboratory Machine Information System</p>
 </header>
-
+<div class="disclaimer-container">
+    <div class="disclaimer-text">
+        Disclaimer: The values listed are based on assumption
+    </div>
+</div>
 <input type="text" id="searchParts" placeholder="Search Spare Part">
 
 <div class="container">
